@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central Bank Widgets: Free Economic Calendar, Rate Odds and Countdown</title>
+<meta name="description" content="Free live widgets for any website: the central bank calendar, a countdown to the next Fed, ECB or BoE decision, rate cut odds, every bank's rate, rate differentials and a rate cut calculator.">
+<link rel="canonical" href="https://interest-rate-decision.github.io/widgets/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Central bank widgets for any website">
+<meta property="og:description" content="Rate cut odds, a decision countdown, the calendar, rates, differentials and a calculator. Free, one line of code, no cookies.">
+<meta property="og:url" content="https://interest-rate-decision.github.io/widgets/">
+<meta property="og:image" content="https://interest-rate-decision.github.io/widgets/assets/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Central bank widgets","applicationCategory":"FinanceApplication","operatingSystem":"Any (web)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://interest-rate-decision.github.io/widgets/","image":"https://interest-rate-decision.github.io/widgets/assets/banner.png","description":"Free live widgets for websites: central bank calendar, decision countdown, rate cut odds, central bank rates, rate differentials and a rate cut calculator.","publisher":{"@type":"Organization","name":"InterestRateDecision.com","url":"https://interestratedecision.com/","sameAs":["https://github.com/Interest-Rate-Decision"]}}
+</script>
+<style>
+  :root { --ink: #070b14; --text: #0a1020; --muted: #566176; --line: #e3e7ee; --accent: #3d5afe; --bg: #f4f6f9; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; color: var(--text); background: var(--bg); }
+  a { color: var(--accent); }
+  header { background: var(--ink); color: #e8ecf4; padding: 56px 24px 64px; background-image: radial-gradient(50% 80% at 80% 0%, rgba(61,90,254,.35), transparent 70%); }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  .brand { font-weight: 800; font-size: 18px; color: #e8ecf4; text-decoration: none; }
+  .brand b { color: #8ea2ff; }
+  h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; letter-spacing: -.03em; margin: 28px 0 14px; max-width: 900px; }
+  .lead { font-size: 19px; color: #aab4c8; max-width: 760px; margin: 0; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+  .btn { display: inline-block; padding: 12px 20px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  .btn-p { background: var(--accent); color: #fff; }
+  .btn-g { border: 1px solid rgba(148,163,184,.4); color: #e8ecf4; }
+  main { padding: 48px 24px 64px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; align-items: start; }
+  .card h2 { font-size: 20px; margin: 0 0 4px; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+  .card code { font-size: 13px; }
+  pre { background: var(--ink); color: #e8ecf4; padding: 16px; border-radius: 12px; overflow-x: auto; font-size: 13px; }
+  section.how { max-width: 820px; margin: 56px auto 0; }
+  footer { padding: 32px 24px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="https://interestratedecision.com/">InterestRate<b>Decision</b>.com</a>
+    <h1>Free central bank widgets for your website</h1>
+    <p class="lead">A live economic calendar of interest rate decisions, a countdown to the next Fed, ECB or Bank of England decision, rate cut odds, every central bank's rate, rate differentials and a rate cut calculator. One line of code, no sign-up, no cookies.</p>
+    <div class="cta">
+      <a class="btn btn-p" href="https://interestratedecision.com/widget/">Build yours with a live preview</a>
+      <a class="btn btn-g" href="https://github.com/Interest-Rate-Decision/widgets">Source and docs on GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <h2>Rate cut odds</h2>
+        <p>The Fed's chance of a cut, hold or hike at each meeting ahead. <code>data-widget="odds"</code></p>
+        <div class="ird-widget" data-widget="odds" data-bank="fed"><a href="https://interestratedecision.com/">InterestRateDecision.com</a></div>
+      </div>
+      <div class="card">
+        <h2>Decision countdown</h2>
+        <p>The next central bank decision, to the second. <code>data-widget="countdown"</code></p>
+        <div class="ird-widget" data-widget="countdown"><a href="https://interestratedecision.com/">InterestRateDecision.com</a></div>
+      </div>
+      <div class="card">
+        <h2>Central bank calendar</h2>
+        <p>The next interest rate decisions, with odds. <code>data-widget="next"</code></p>
+        <div class="ird-widget" data-widget="next" data-n="5" data-odds="1" data-theme="dark"><a href="https://interestratedecision.com/">InterestRateDecision.com</a></div>
+      </div>
+      <div class="card">
+        <h2>Central bank interest rates</h2>
+        <p>Every bank's rate, last move and next meeting. <code>data-widget="rates"</code></p>
+        <div class="ird-widget" data-widget="rates"><a href="https://interestratedecision.com/">InterestRateDecision.com</a></div>
+      </div>
+      <div class="card">
+        <h2>Rate differential</h2>
+        <p>EUR/USD: the gap between the ECB's and the Fed's rates. <code>data-widget="differential"</code></p>
+        <div class="ird-widget" data-widget="differential" data-pair="EURUSD"><a href="https://interestratedecision.com/">InterestRateDecision.com</a></div>
+      </div>
+      <div class="card">
+        <h2>Rate cut calculator</h2>
+        <p>What a cut does to a mortgage payment and savings. <code>data-widget="calculator"</code></p>
+        <div class="ird-widget" data-widget="calculator"><a href="https://interestratedecision.com/">InterestRateDecision.com</a></div>
+      </div>
+    </div>
+
+    <section class="how">
+      <h2>Add one to your site</h2>
+      <pre>&lt;div class="ird-widget" data-widget="odds" data-bank="fed"&gt;&lt;a href="https://interestratedecision.com/"&gt;InterestRateDecision.com&lt;/a&gt;&lt;/div&gt;
+&lt;script async src="https://interestratedecision.com/embed.js"&gt;&lt;/script&gt;</pre>
+      <p>Change <code>data-widget</code> to <code>countdown</code>, <code>next</code>, <code>rates</code>, <code>differential</code> or <code>calculator</code>. Options for the bank, theme, colour and more are in the <a href="https://github.com/Interest-Rate-Decision/widgets#options">documentation</a>. On WordPress, use the <a href="https://github.com/Interest-Rate-Decision/widgets/tree/main/wordpress">plugin</a> or a Custom HTML block.</p>
+      <p>The data covers the Federal Reserve, ECB, Bank of England, Bank of Japan, Bank of Canada, RBA, RBNZ, SNB, Norges Bank and Riksbank, and updates within minutes of each decision. It is also free as a <a href="https://github.com/Interest-Rate-Decision/central-bank-interest-rates">dataset</a> and through <a href="https://github.com/Interest-Rate-Decision/interest-rate-decisions">clients for JavaScript and Python</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  Widgets and data by <a href="https://interestratedecision.com/">InterestRateDecision.com</a>: every central bank interest rate decision, measured. · <a href="https://github.com/Interest-Rate-Decision">GitHub</a>
+</footer>
+<script async src="https://interestratedecision.com/embed.js"></script>
+</body>
+</html>

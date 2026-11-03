@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Central Bank Widgets: Free Economic Calendar, Rate Odds and Countdown</title>
 <meta name="description" content="Free live widgets for any website: the central bank calendar, a countdown to the next Fed, ECB or BoE decision, rate cut odds, every bank's rate, rate differentials and a rate cut calculator.">
+<link rel="icon" href="https://interestratedecision.com/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://interestratedecision.com/apple-touch-icon.png">
 <link rel="canonical" href="https://interest-rate-decision.github.io/widgets/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Central bank widgets for any website">
@@ -22,8 +24,12 @@
   a { color: var(--accent); }
   header { background: var(--ink); color: #e8ecf4; padding: 56px 24px 64px; background-image: radial-gradient(50% 80% at 80% 0%, rgba(61,90,254,.35), transparent 70%); }
   .wrap { max-width: 1180px; margin: 0 auto; }
-  .brand { font-weight: 800; font-size: 18px; color: #e8ecf4; text-decoration: none; }
-  .brand b { color: #8ea2ff; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; }
+  .brand svg { width: 42px; height: 42px; flex: none; }
+  .brand span { display: flex; flex-direction: column; line-height: 1; }
+  .brand em { font: 700 15px/1 system-ui, -apple-system, 'Segoe UI', sans-serif; font-style: normal; letter-spacing: .15em; text-transform: uppercase; }
+  .brand b { color: #d4b36a; }
+  .brand small { font: 500 9px/1 system-ui, sans-serif; letter-spacing: .3em; text-transform: uppercase; color: #8d98b0; margin-top: 6px; }
   h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.05; letter-spacing: -.03em; margin: 28px 0 14px; max-width: 900px; }
   .lead { font-size: 19px; color: #aab4c8; max-width: 760px; margin: 0; }
   .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
@@ -43,7 +49,7 @@
 <body>
 <header>
   <div class="wrap">
-    <a class="brand" href="https://interestratedecision.com/">InterestRate<b>Decision</b>.com</a>
+    <a class="brand" href="https://interestratedecision.com/" aria-label="InterestRateDecision.com"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="#0c1a3a"/><g fill="none" stroke="#d4b36a"><circle cx="32" cy="32" r="29.6" stroke-width="2.2"/><circle cx="32" cy="32" r="25.6" stroke-width=".9" stroke-opacity=".75"/></g><g fill="#d4b36a"><path d="M16.5 25.2 32 16.4 47.5 25.2Z"/><rect x="17.5" y="26.6" width="29" height="1.8"/><rect x="17.5" y="45.6" width="29" height="1.8"/><rect x="15.5" y="48.6" width="33" height="2.2"/></g><g fill="#f4f1e8"><rect x="18.7" y="36.4" width="6.6" height="1.6"/><rect x="19.5" y="38" width="5" height="7.6"/><rect x="25.2" y="32.9" width="6.6" height="1.6"/><rect x="26" y="34.5" width="5" height="11.1"/><rect x="31.7" y="29.9" width="6.6" height="1.6"/><rect x="32.5" y="31.5" width="5" height="14.1"/><rect x="38.2" y="27.9" width="6.6" height="1.6"/><rect x="39" y="29.5" width="5" height="16.1"/></g></svg><span><em>Interest Rate <b>Decision</b></em><small>interestratedecision.com</small></span></a>
     <h1>Free central bank widgets for your website</h1>
     <p class="lead">A live economic calendar of interest rate decisions, a countdown to the next Fed, ECB or Bank of England decision, rate cut odds, every central bank's rate, rate differentials and a rate cut calculator. One line of code, no sign-up, no cookies.</p>
     <div class="cta">
